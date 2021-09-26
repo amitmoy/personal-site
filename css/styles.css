@@ -78,6 +78,7 @@ a {
 
 .about-me-paragraph {
   margin-top: 60px;
+  padding-bottom: 60px;
 }
 
 .header-div{
@@ -131,7 +132,6 @@ a {
 .mid-div {
   text-align: center;
   width: 75%;
-  height:600px;
   margin: -200px auto 0 auto;
   border-radius: 12px;
   background: white;
