@@ -1,8 +1,4 @@
-html{
-	overflow-x:hidden;
-}
-
-body{
+body,html{
   margin: 0;
   text-align: center;
   overflow-x:hidden;
