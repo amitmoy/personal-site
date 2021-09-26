@@ -1,6 +1,8 @@
 body{
   margin: 0;
   text-align: center;
+  width: 100%;
+  overflow-x:hidden;
 }
 
 hr {
@@ -11,10 +13,6 @@ hr {
   margin: 30px auto;
 }
 
-div{
-  margin: 0;
-}
-
 h1{
   margin-top: 0;
   margin-bottom: 0;
@@ -23,6 +21,9 @@ h1{
   color: #ffefc3;
   font-size: 6em;
   font-weight: normal;
+  position: relative;
+  z-index: 1;
+  text-shadow: -2px 2px 0 #4B6587;
 }
 
 h2{
@@ -31,10 +32,45 @@ h2{
   text-align: center;
   color: #ffefc3;
   font-family: 'helvetica', sans-serif;
+  position: relative;
+  font-size: 2em;
+  z-index: 1;
+  text-shadow: -2px 2px 0 #4B6587;
 }
 
-.second-header{
-  font-size: 2em;
+h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.6em;
+}
+
+h4 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.25em;
+  font-weight: none;
+  margin: 10px 0;
+}
+
+
+tr {
+  text-align: center;
+}
+
+table {
+  margin: 0 auto;
+}
+
+p {
+  font-size: 1.25em;
+  font-family: arial, cursive;
+  line-height: 1.8em;
+}
+
+a {
+  font-family: arial;
+}
+
+.about-me-paragraph {
+  margin-top: 60px;
 }
 
 .header-div{
@@ -43,21 +79,34 @@ h2{
   height: 800px;
   border-bottom-right-radius: 60% 10%;
   border-bottom-left-radius: 60% 10%;
+  margin: 0;
 }
 
-.first-cloud{
+.cloud1{
   width: 280px;
   height: 140px;
   position: absolute;
-  left: 100px;
   top:80px;
 }
 
-.second-cloud{
+.cloud2{
   width: 200px;
   height: 100px;
   position: absolute;
-  right: 150px;
+  top:320px;
+}
+
+.cloud3{
+  width: 150px;
+  height: 75px;
+  position: absolute;
+  top:20px;
+}
+
+.cloud4{
+  width: 200px;
+  height: 100px;
+  position: absolute;
   top:450px;
 }
 
@@ -66,21 +115,120 @@ h2{
 }
 
 .profile-pic {
+  display: block;
+
   border-radius: 50%;
-  display: inline;
+  margin: 60px auto 20px auto;
 }
 
 .mid-div {
-  display: inline;
+  text-align: center;
+  width: 75%;
+  height:600px;
+  margin: -200px auto 0 auto;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0px 5px 11px 2px rgb(0 0 0 / 50%), 0 0 0 0px #e6ecf8;
+  border-style: none;
+}
+
+.bottom-div {
+  text-align: center;
+  width: 75%;
+  height:400px;
+  margin: 100px auto 0 auto;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0px 5px 11px 0px rgb(0 0 0 / 50%), 0 0 0 0px #e6ecf8;
+  border-style: none;
+}
+
+.header-mid-div {
+  height: 75px;
+  background: #D8D3CD;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  margin: 0;
 }
 
 .links-div {
   height: 60px;
-  background: lightblue;
 }
 
 .personal-links {
   position: relative;
   margin: 20px;
   top: 20px;
+}
+
+.mid-header-text {
+  position: relative;
+  top: 20px;
+}
+
+.langlogo {
+  width: 140px;
+  margin: 0 20px;
+}
+
+.logo-div {
+  display: relative;
+  margin: auto auto;
+}
+
+.logos-div {
+  position: relative;
+  top: 45px;
+}
+
+
+@keyframes slide-right1 {
+  0% {
+            left: -15%;
+  }
+  100% {
+            left: 100%;
+  }
+}
+
+@keyframes slide-right2 {
+  0% {
+            left: -20%;
+  }
+  100% {
+            left: 100%;
+  }
+}
+
+@keyframes slide-right3 {
+  0% {
+            left: -25%;
+  }
+  100% {
+            left: 100%;
+  }
+}
+
+.slide-right1 {
+
+	        animation: slide-right2 80s linear infinite;
+          animation-delay: -60s;
+}
+
+.slide-right2 {
+
+	        animation: slide-right3 40s linear infinite;
+          animation-delay: -30s;
+}
+
+.slide-right3 {
+
+	        animation: slide-right1 60s linear infinite;
+          animation-delay: -30s;
+}
+
+.slide-right4 {
+
+	        animation: slide-right2 120s linear infinite;
+          animation-delay: -30s;
 }
